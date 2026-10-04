@@ -1,0 +1,27 @@
+<!doctype html><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Travel Secretary — ASOBININ OS</title><link rel='stylesheet' href='../style.css'><main><p><a href='../generated.html'>← Knowledge Map</a></p><header><p class='eyebrow'>System</p><h1>Travel Secretary</h1><p class='lead'>旅行の曖昧な希望から候補比較・日程確認・予約準備まで進め、購入直前だけ承認を求める。</p></header><section><h1>Skill: Travel Secretary</h1>
+<h2>Input examples</h2>
+<ul>
+<li>来月どっか旅行したい</li>
+<li>温泉行きたい</li>
+<li>3日くらい暇だからどこか</li>
+<li>このイベントに合わせて宿と移動を取って</li>
+</ul>
+<h2>Pipeline</h2>
+<p>1. Intent — 日程、目的、予算、人数、必須条件を既知Contextから埋める</p>
+<p>2. Calendar — 接続済み予定との衝突を確認</p>
+<p>3. Discover — 目的地/イベント/季節条件を調査</p>
+<p>4. Route — 鉄道/航空/その他の現実的な移動候補を作る</p>
+<p>5. Stay — 宿候補を比較</p>
+<p>6. Preference — private Contextの座席・交通・宿の好みを適用</p>
+<p>7. Cost — 交通+宿+現地固定費の概算</p>
+<p>8. Critic — 営業日、乗継、チェックイン、キャンセル条件、総額、根拠を確認</p>
+<p>9. Recommend — 原則1案を第一候補、必要なら代替1–2案</p>
+<p>10. Approval — 購入/予約確定の直前だけ本人へ確認</p>
+<p>11. Book — 許可されたToolで実行</p>
+<p>12. Verify — 予約番号、日時、金額、取消条件を再確認</p>
+<p>13. Calendar — 確定後に予定反映</p>
+<p>14. Record — 旅程の必要情報だけruntime stateへ</p>
+<h2>Human effort target</h2>
+<p>本人が検索結果20件を比較しない。</p>
+<p>本人に返すのは原則:</p>
+<p>「この案が一番合う。総額約X円。これで予約する？」</p></section><footer><p class='eyebrow'>SOURCE: skills/travel/SKILL.md</p></footer></main>
